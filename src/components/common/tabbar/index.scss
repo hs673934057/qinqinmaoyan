@@ -1,0 +1,30 @@
+@import '../../../assets/style/theme.scss';
+@import '../../../assets/style/border.scss';
+
+footer{
+    height:.48rem;
+    @include border( #ccc, 1px 0 0 0 );
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        li{
+            a{
+                display:flex;
+                flex-direction: column;
+                justify-items: center;
+                color: #666;
+                text-decoration: none;
+                &.active{
+                    i{color:$theme}
+                    span{color:$theme}
+                    
+                }
+
+            }
+        }
+    }
+}
